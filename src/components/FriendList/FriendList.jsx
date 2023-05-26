@@ -1,11 +1,12 @@
-import PropTypes, { array } from 'prop-types';
-import { FriendListItem } from './FriendListItem';
+import PropTypes from 'prop-types';
+import { FriendListItem } from '../FriendListItem/FriendListItem';
+import { Friends } from './FriendList.styled';
 
 export const FriendList = ({ friends }) => {
   return (
-    <ul className="friend-list">
+    <Friends>
       <FriendListItem friends={friends} />
-    </ul>
+    </Friends>
   );
 };
 
