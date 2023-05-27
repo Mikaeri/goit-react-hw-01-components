@@ -3,6 +3,8 @@ import data from '../data.json';
 import friends from '../friends.json';
 import transactions from '../transactions.json';
 
+import './index.css';
+
 import { Profile } from '../components/Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 import { FriendList } from './FriendList/FriendList';

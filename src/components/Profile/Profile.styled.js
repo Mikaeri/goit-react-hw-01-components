@@ -5,8 +5,6 @@ export const ProfileCard = styled.div`
   width: 240px;
   margin-left: 15px;
   margin-right: auto;
-  /* outline: 1px solid black; */
-  border-radius: 5px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -21,6 +19,7 @@ export const AvatarImage = styled.img`
   max-width: 40%;
   border-radius: 50%;
   outline: 1px solid grey;
+  margin: 20px auto;
 `;
 
 export const Name = styled.p`

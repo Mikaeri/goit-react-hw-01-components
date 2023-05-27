@@ -9,6 +9,8 @@ import {
   Tag,
 } from '../Profile/Profile.styled';
 
+import css from './Profile.module.css';
+
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <ProfileCard>
@@ -21,7 +23,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
 
       <StatsList>
         <StatsItem>
-          <span className="label">Followers</span>
+          <span className={css.label}>Followers</span>
           <span className="quantity">{stats.followers}</span>
         </StatsItem>
         <StatsItem>
