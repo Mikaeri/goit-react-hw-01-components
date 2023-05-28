@@ -5,19 +5,18 @@ import {
   StatisticSection,
   Title,
 } from './Statistics.styled';
-import css from '../Profile/Profile.module.css';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <StatisticSection className="statistics">
-      {title && <Title className="title">{title}</Title>}
+    <StatisticSection>
+      {title && <Title>{title}</Title>}
 
       <StatList>
         {stats.map(({ id, label, percentage }) => {
           return (
             <StatListItem key={id}>
-              <span className={css.label}>{label}</span>
-              <span className="percentage">{percentage}%</span>
+              <span>{label}</span>
+              <span>{percentage}%</span>
             </StatListItem>
           );
         })}

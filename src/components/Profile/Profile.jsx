@@ -9,8 +9,6 @@ import {
   Tag,
 } from '../Profile/Profile.styled';
 
-import css from './Profile.module.css';
-
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <ProfileCard>
@@ -18,21 +16,21 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <AvatarImage src={avatar} alt="User avatar" />
         <Name>{username}</Name>
         <Tag>@{tag}</Tag>
-        <p className="location">{location}</p>
+        <p>{location}</p>
       </Description>
 
       <StatsList>
         <StatsItem>
-          <span className={css.label}>Followers</span>
-          <span className="quantity">{stats.followers}</span>
+          <span>Followers</span>
+          <span>{stats.followers}</span>
         </StatsItem>
         <StatsItem>
-          <span className={css.label}>Views</span>
-          <span className="quantity">{stats.views}</span>
+          <span>Views</span>
+          <span>{stats.views}</span>
         </StatsItem>
         <StatsItem>
-          <span className={css.label}>Likes</span>
-          <span className="quantity">{stats.likes}</span>
+          <span>Likes</span>
+          <span>{stats.likes}</span>
         </StatsItem>
       </StatsList>
     </ProfileCard>
